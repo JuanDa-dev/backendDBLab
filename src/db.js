@@ -5,10 +5,10 @@ export const pool = createPool({
     host: DB_HOST,
     user: DB_USER,
     password: DB_PASSWORD,
-    port: DB_PORT,
+    //port: DB_PORT,
     database: DB_DATABASE,
-    //ssl: {
-    //    rejectUnauthorized: true
-    //}
+    ssl: {
+        rejectUnauthorized: true
+    }
 });
 //DATASET: https://ourworldindata.org/covid-deaths
